@@ -1,7 +1,8 @@
 # 🌐 Proyecto Final: *Mi Primera Página Web*
 
 ¡Bienvenido a mi proyecto final!  
-Este es el resultado de muchas horas de práctica, aprendizajes, errores… pero sobre todo **mucho crecimiento personal**. 💪
+Este es el resultado de muchas horas de práctica, aprendizajes, errores… 
+pero sobre todo **mucho crecimiento personal**. 💪
 
 ---
 
@@ -18,8 +19,10 @@ Este es el resultado de muchas horas de práctica, aprendizajes, errores… pero
 
 ## 💜 Sobre el proyecto
 
-Esta página la realicé como parte de mi formación en **DEV.F**, gracias al apoyo de **Bécalos** y a las enseñanzas de mi sensei **Ana** 💜  
-Al principio me costó adaptarme y entender cómo estructurar todo… pero poco a poco, línea por línea, logré construir este proyecto que hoy puedo compartir con orgullo. 
+Esta página la realicé como parte de mi formación en **DEV.F**, 
+gracias al apoyo de **Bécalos** y a las enseñanzas de mi sensei **Ana** 💜  
+Al principio me costó adaptarme y entender cómo estructurar todo… 
+pero poco a poco, línea por línea, logré construir este proyecto que hoy puedo compartir con orgullo. 
 
 ---
 
