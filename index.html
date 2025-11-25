@@ -6,48 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pasteleria Muffin</title>
 </head>
-<body>
+<body style="background-color: blanchedalmond; font-family: Arial, sans-serif;">
     <header>    <!-- Esta es una etiqueta semantica de cabecera -->
         <nav> <!-- Barra de navegación  -->
+            <div>
+                <span>Muffin</span>
+                <span>Cafeteria & Pasteleria</span>
+            </div>
+            
             <ul>  <!-- Lista desordenada -->
-                <li> <a href="">Nosotros</a> </li>
-                <li> <a href="">Promociones</a> </li>
-                <li> <a href="">Menu</a> </li>
-                <li> <a href="">Contacto</a> </li>
+                <!-- enlace interno -->
+                <li> <a href="#nosotros">Nosotros</a> </li>
+                <li> <a href="#promociones">Promociones</a> </li>
+                <li> <a href="#menu">Menu</a> </li>
+                <li> <a href="#contacto">Contacto</a> </li>
             </ul>
         </nav>  
+        <section>
+            <div>
+                <h1 style="color: brown;text-align: center;">Cafeteria Muffin</h1>
+                <p style="font-size: 22px;">Pan recien horneado, café caliente y pasteles hechos con amor..</p>
+                <a href="#menu">Ver menu</a>
+            </div>
+
+            <div>
+                <img src="https://img.freepik.com/vector-gratis/texto-fresco-delicioso-panaderia-diseno-pancartas-o-carteles_1308-127202.jpg?semt=ais_hybrid&w=740&q=80" alt="logo" width="300">
+            </div>
+        </section>
     </header>
     <!-- Información principal de mi página -->
      <main>
 
+        <section id="nosotros">
         <!-- Sección sobre nosotros -->
-        <article>
+        <div>
             <h1>Cafeteria Muffin</h1>
             <p>Nuestra pasión por la resposteria nos ha inspirado a hornear el mejor pan,
             crear pasteles unicos, servir el mejor café pero sobre todo a reinventarnos e innovar todos los días.</p>
-        </article>
+        </div>
+        </section>
 
         <!-- Sección de promociones -->
-         <section>
+         <section id="promociones">
+            <div>
             <h2>Promociones</h2>
             <ul>
                 <li><strong>2x1</strong>en Muffin los lunes y viernes.</li>
                 <li><strong>Combo super Muffin </strong>Café mas pan por $55</li>
                 <li>10% de descuento en pasteles de temporada</li>
             </ul>
+            </div>
         </section>
         
         <!-- Sección del menú -->    
-         <section>
+         <section id="menu">
             <h2>Menu</h2>
             <!-- Tarjeta de postre -->
             <div>
-                <img src="https://i.blogs.es/396729/como-hacer-carlota-pay-de-limon-1-/450_1000.jpg" alt="Imagen de pay de limón">
+                <div>
+                <article>               <!-- tarjeta 1 -->
+                <img src="https://i.blogs.es/396729/como-hacer-carlota-pay-de-limon-1-/450_1000.jpg" alt="Imagen de pay de limón" width="300">
                 <h3>Pay de limón</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, facere aspernatur sit nostrum labore.</p>
                 <p><strong>$280.00</strong></p>
-                <button>Agregar</button>
+                <button style="border-radius: 8px; background-color: chocolate; color: white;">Agregar</button>
             </div>
+            </article>
+            <div>
+                <article>               <!-- tarjeta 2 -->
+                <img src="https://www.recetasdesbieta.com/wp-content/uploads/2019/02/cheesecake-japones-1.jpg" alt="Imagen de tarta de queso japonesa" width="300">
+                <h3>Tarta de queso japonesa</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, facere aspernatur sit nostrum labore.</p>
+                <p><strong>$320.00</strong></p>
+                <button style="border-radius: 8px; background-color: chocolate; color: white;">Agregar</button>
+            </div>
+            </article>
+            <div>
+                <article>               <!-- tarjeta 3 -->
+                <img src="https://www.justspices.es/media/recipe/brownie-chocolate.jpg" alt="Imagen de brownie de chocolate" width="300">
+                <h3>Brownie de chocolate</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, facere aspernatur sit nostrum labore.</p>
+                <p><strong>$150.00</strong></p>
+                <button style="border-radius: 8px; background-color: chocolate; color: white;">Agregar</button>
+            </div>
+            </article>
+            </div>
+
+            <p>Productos en tu carroto: <span>0</span></p>
+
         </section>
 
         <!-- Sección de receta -->
@@ -68,10 +114,71 @@
 
      </main>
      
-     <footer>      <!-- pie de página -->
-        <section>
+     <footer> 
+        <div>    <!-- pie de página -->
+        <section id="contacto">
             <h2>Contactanos</h2>
             <p>Visitanos en nuestra sucursal....</p>
+
+            <h3>Pedidos especiales</h3>
+            <form action="">
+                <div>
+                    <label for="">Nombre completo</label>
+                    <input type="text" placeholder="Tu Nombre">
+                </div>
+                <div>
+                    <label for="">Celular</label>
+                    <input type="text" placeholder="Tu teléfono">
+                </div>
+                <div>
+                    <label for="">Correo electrónico</label>
+                    <input type="email" placeholder="Tu correo">
+                </div>
+
+                <!-- sabores -->
+                 <fieldset>
+                    <legend>Sabor del pastel</legend>
+                    <label for="">
+                        <input type="radio" name="sabor" value="chocolate"> Chocolate
+                    </label>
+                    <label for="">
+                        <input type="radio" name="sabor" value="vainilla"> Vainilla
+                    </label>
+                    <label for="">
+                        <input type="radio" name="sabor" value="fresa"> Fresa
+                    </label>
+                    <label for="">
+                        <input type="radio" name="sabor" value="red-velvet"> Red Velvet
+                    </label>        
+                 </fieldset>
+
+                 <fieldset>
+                    <legend>Extras:</legend>
+                    <label for="">
+                        <input type="checkbox" name="extras" value="chispas-de-chocolate"> Chispas de chocolate
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="extras" value="frutas-frescas"> Frutas frescas
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="extras" value="nueces"> Nueces
+                    </label>
+                    <label for="">
+                        <input type="radio" name="vela de cumpleaños"> Vela de cumpleaños
+                    </label>
+                 </fieldset>
+
+                    <div>
+                        <label for="">Fecha del evento:</label>
+                        <input type="date">
+                    </div>
+                    <div>
+                        <label for="">Imagen de referencia:</label>
+                        <input type="file">
+                    </div>
+                <button type="submit" style="border-radius: 8px; background-color: chocolate; color: white;">Enviar pedido</button>
+
+            </form>
         </section>
         <ul>
             <li> <a href="">Facebook</a> </li>
@@ -81,5 +188,6 @@
             <li> <a href="https://www.youtube.com/watch?v=PWTA1HB6aAw" target="_blank">Youtube</a> </li>
         </ul>
         <p>2025 Cafeteria Muffin - Todos los derechos reservados</p>
+        </div> 
      </footer>
 </html>
